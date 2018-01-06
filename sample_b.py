@@ -13,8 +13,10 @@ class Newsletter(Offer):
 
 
     def _get_static_data(self):
-        '''Try to fetch articles from the previous day. if there aren't enough articles,
-        go back successive days until there are enough to populate the template.'''
+        '''
+        Try to fetch articles from the previous day. if there aren't enough articles,
+        go back successive days until there are enough to populate the template.
+        '''
 
         days = 1
         r = Remnick()
